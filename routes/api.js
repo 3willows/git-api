@@ -4,6 +4,10 @@ const express = require('express');
 const router = express.Router();
 const https = require('https');
 
+router.get('/', function (req, res) {
+    res.send("API endpoint here!")
+})
+
 router.get('/github/userinfo/:user', async function (req, res) {
     const user = req.params.user;
     const options = {
