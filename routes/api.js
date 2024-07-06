@@ -18,7 +18,7 @@ router.get('/github/userinfo/:user', async function (req, res) {
         apiResponse.pipe(res);
     }).on('error', (e) => {
         console.log(e);
-        res.status(500).send('Something wnent wrong!');
+        res.status(500).send('Something went wrong!');
     })
 })
 
@@ -38,7 +38,7 @@ router.get('/github/repoinfo/:user/:reponame', async function (req, res) {
         apiResponse.pipe(res);
     }).on('error', (e) => {
         console.log(e);
-        res.status(500).send('Something wnent wrong!');
+        res.status(500).send('Something went wrong!');
     })
 })
 
@@ -57,7 +57,7 @@ router.get('/github/commitinfo/:user/:reponame', async function (req, res) {
         apiResponse.pipe(res);
     }).on('error', (e) => {
         console.log(e);
-        res.status(500).send('Something wnent wrong!');
+        res.status(500).send('Something went wrong!');
     })
 })
 
