@@ -7,3 +7,11 @@ GET http://localhost:3000/api
 ###
 
 GET http://localhost:3000/api/github/userinfo/3willows
+
+###
+
+GET http://localhost:3000/api/github/repoinfo/3willows/html-css-export-word
+
+###
+
+GET http://localhost:3000/api/github/commitinfo/3willows/html-css-export-word

@@ -36,7 +36,7 @@ router.get('/github/repoinfo/:user/:reponame', async function (req, res) {
         headers: {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1521.3 Safari/537.36'
         },
-        OAUth: "<paste your token here>"
+        OAUth: process.env.GHTOKEN
     }
     https.get(options, function (apiResponse) {
         apiResponse.pipe(res);
@@ -55,7 +55,7 @@ router.get('/github/commitinfo/:user/:reponame', async function (req, res) {
         headers: {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1521.3 Safari/537.36'
         },
-        OAUth: "<paste your token here>"
+        OAUth: process.env.GHTOKEN
     }
     https.get(options, function (apiResponse) {
         apiResponse.pipe(res);
